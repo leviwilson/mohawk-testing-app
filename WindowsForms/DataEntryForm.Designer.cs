@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "John Doe",
             "12/15/1967",
             "FL"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Anna Doe",
             "3/4/1975"}, -1);
             this.deleteItemButton = new System.Windows.Forms.Button();
@@ -46,12 +46,13 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.addLotsOfThings = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // deleteItemButton
             // 
-            this.deleteItemButton.Location = new System.Drawing.Point(334, 55);
+            this.deleteItemButton.Location = new System.Drawing.Point(334, 84);
             this.deleteItemButton.Name = "deleteItemButton";
             this.deleteItemButton.Size = new System.Drawing.Size(75, 23);
             this.deleteItemButton.TabIndex = 2;
@@ -61,12 +62,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.addLotsOfThings);
             this.groupBox3.Controls.Add(this.deleteItemButton);
             this.groupBox3.Controls.Add(this.addItemButton);
             this.groupBox3.Controls.Add(this.personListView);
             this.groupBox3.Location = new System.Drawing.Point(135, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(415, 114);
+            this.groupBox3.Size = new System.Drawing.Size(415, 268);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "List of items";
@@ -90,11 +92,11 @@
             this.personListView.GridLines = true;
             this.personListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.personListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
+            listViewItem3,
+            listViewItem4});
             this.personListView.Location = new System.Drawing.Point(6, 26);
             this.personListView.Name = "personListView";
-            this.personListView.Size = new System.Drawing.Size(314, 74);
+            this.personListView.Size = new System.Drawing.Size(314, 236);
             this.personListView.TabIndex = 0;
             this.personListView.UseCompatibleStateImageBehavior = false;
             this.personListView.View = System.Windows.Forms.View.Details;
@@ -125,7 +127,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(254, 147);
+            this.maskedTextBox1.Location = new System.Drawing.Point(254, 286);
             this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -134,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(138, 150);
+            this.label1.Location = new System.Drawing.Point(138, 289);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 13;
@@ -142,12 +144,23 @@
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(425, 280);
+            this.maskedTextBox2.Location = new System.Drawing.Point(425, 419);
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox2.TabIndex = 14;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // addLotsOfThings
+            // 
+            this.addLotsOfThings.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.addLotsOfThings.Location = new System.Drawing.Point(334, 55);
+            this.addLotsOfThings.Name = "addLotsOfThings";
+            this.addLotsOfThings.Size = new System.Drawing.Size(75, 23);
+            this.addLotsOfThings.TabIndex = 2;
+            this.addLotsOfThings.Text = "Add Many";
+            this.addLotsOfThings.UseVisualStyleBackColor = true;
+            this.addLotsOfThings.Click += new System.EventHandler(this.addLotsOfThings_Click);
             // 
             // DataEntryForm
             // 
@@ -183,5 +196,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColumnHeader columnState;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Button addLotsOfThings;
     }
 }
