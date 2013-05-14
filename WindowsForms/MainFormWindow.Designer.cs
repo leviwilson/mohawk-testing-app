@@ -69,10 +69,13 @@
             this.treeView = new System.Windows.Forms.TreeView();
             this.multiLineTextField = new System.Windows.Forms.TextBox();
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.automatableMonthCalendar1 = new WindowsForms.AutomatableMonthCalendar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -423,6 +426,24 @@
             this.maskedTextBox.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox.TabIndex = 18;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(381, 41);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel1.TabIndex = 19;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // numericUpDown
+            // 
+            this.numericUpDown.Location = new System.Drawing.Point(253, 39);
+            this.numericUpDown.Name = "numericUpDown";
+            this.numericUpDown.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown.TabIndex = 20;
+            // 
             // automatableMonthCalendar1
             // 
             this.automatableMonthCalendar1.Location = new System.Drawing.Point(142, 474);
@@ -436,6 +457,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 657);
+            this.Controls.Add(this.numericUpDown);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.maskedTextBox);
             this.Controls.Add(this.automatableMonthCalendar1);
             this.Controls.Add(this.multiLineTextField);
@@ -466,6 +489,7 @@
             this.groupBox2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,6 +531,8 @@
         private System.Windows.Forms.TextBox multiLineTextField;
         private AutomatableMonthCalendar automatableMonthCalendar1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.NumericUpDown numericUpDown;
     }
 }
 

@@ -83,5 +83,11 @@ namespace WindowsForms
         {
 
         }
+
+        private int _clickCount = 0;
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel1.Text = string.Format("{0} (clicked {1} times)", linkLabel1.Name, ++_clickCount);
+        }
     }
 }
