@@ -71,6 +71,7 @@
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
             this.automatableMonthCalendar1 = new WindowsForms.AutomatableMonthCalendar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -444,6 +445,16 @@
             this.numericUpDown.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown.TabIndex = 20;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 152);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Data Grid View";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // automatableMonthCalendar1
             // 
             this.automatableMonthCalendar1.Location = new System.Drawing.Point(142, 474);
@@ -457,6 +468,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 657);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.numericUpDown);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.maskedTextBox);
@@ -533,6 +545,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.NumericUpDown numericUpDown;
+        private System.Windows.Forms.Button button2;
     }
 }
 

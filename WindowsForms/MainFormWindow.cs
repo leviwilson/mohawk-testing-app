@@ -89,5 +89,10 @@ namespace WindowsForms
         {
             linkLabel1.Text = string.Format("{0} (clicked {1} times)", linkLabel1.Name, ++_clickCount);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new DataGridViewForm().Show();
+        }
     }
 }
