@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using UIA.Extensions;
 
 namespace WindowsForms
 {
@@ -8,6 +9,7 @@ namespace WindowsForms
         public MainFormWindow()
         {
             InitializeComponent();
+            numericUpDown1.AsRangeValue();
         }
 
         private void aboutButton_Click(object sender, EventArgs e)
