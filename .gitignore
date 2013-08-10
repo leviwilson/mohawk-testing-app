@@ -2,5 +2,6 @@ bin/
 obj/
 Debug/
 Release/
+packages/
 *.pdb
 *.suo
