@@ -77,5 +77,12 @@ namespace WindowsForms
         {
             new DataGridViewForm().Show();
         }
+
+        private void toggleMultiSelect_Click(object sender, EventArgs e)
+        {
+            FruitListBox.SelectionMode = (FruitListBox.SelectionMode == SelectionMode.One)
+                                             ? SelectionMode.MultiExtended
+                                             : SelectionMode.One;
+        }
     }
 }

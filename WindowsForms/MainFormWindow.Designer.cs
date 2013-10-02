@@ -72,8 +72,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
-            this.automatableMonthCalendar1 = new WindowsForms.AutomatableMonthCalendar();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.toggleMultiSelect = new System.Windows.Forms.Button();
+            this.automatableMonthCalendar1 = new WindowsForms.AutomatableMonthCalendar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -456,6 +457,23 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(380, 476);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 22;
+            // 
+            // toggleMultiSelect
+            // 
+            this.toggleMultiSelect.Location = new System.Drawing.Point(490, 134);
+            this.toggleMultiSelect.Name = "toggleMultiSelect";
+            this.toggleMultiSelect.Size = new System.Drawing.Size(117, 23);
+            this.toggleMultiSelect.TabIndex = 23;
+            this.toggleMultiSelect.Text = "Toggle Multi-Select";
+            this.toggleMultiSelect.UseVisualStyleBackColor = true;
+            this.toggleMultiSelect.Click += new System.EventHandler(this.toggleMultiSelect_Click);
+            // 
             // automatableMonthCalendar1
             // 
             this.automatableMonthCalendar1.Location = new System.Drawing.Point(142, 474);
@@ -464,18 +482,12 @@
             this.automatableMonthCalendar1.TabIndex = 17;
             this.automatableMonthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.automatableMonthCalendar1_DateChanged);
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(380, 476);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 22;
-            // 
             // MainFormWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 657);
+            this.Controls.Add(this.toggleMultiSelect);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.numericUpDown);
@@ -557,6 +569,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button toggleMultiSelect;
     }
 }
 
