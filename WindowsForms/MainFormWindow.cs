@@ -84,5 +84,10 @@ namespace WindowsForms
                                              ? SelectionMode.MultiExtended
                                              : SelectionMode.One;
         }
+
+        private void FruitListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fruitsLabel.Text = FruitListBox.SelectedItem.ToString();
+        }
     }
 }

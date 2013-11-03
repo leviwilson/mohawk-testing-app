@@ -343,6 +343,7 @@
             this.FruitListBox.Name = "FruitListBox";
             this.FruitListBox.Size = new System.Drawing.Size(159, 95);
             this.FruitListBox.TabIndex = 14;
+            this.FruitListBox.SelectedIndexChanged += new System.EventHandler(this.FruitListBox_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
