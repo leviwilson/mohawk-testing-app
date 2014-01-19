@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "John Doe",
             "12/15/1967",
             "FL"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Anna Doe",
             "3/4/1975"}, -1);
             this.deleteItemButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.addLotsOfThings = new System.Windows.Forms.Button();
             this.addItemButton = new System.Windows.Forms.Button();
             this.personListView = new System.Windows.Forms.ListView();
             this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,7 +47,6 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.addLotsOfThings = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "List of items";
             // 
+            // addLotsOfThings
+            // 
+            this.addLotsOfThings.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.addLotsOfThings.Location = new System.Drawing.Point(334, 55);
+            this.addLotsOfThings.Name = "addLotsOfThings";
+            this.addLotsOfThings.Size = new System.Drawing.Size(75, 23);
+            this.addLotsOfThings.TabIndex = 2;
+            this.addLotsOfThings.Text = "Add Many";
+            this.addLotsOfThings.UseVisualStyleBackColor = true;
+            this.addLotsOfThings.Click += new System.EventHandler(this.addLotsOfThings_Click);
+            // 
             // addItemButton
             // 
             this.addItemButton.Location = new System.Drawing.Point(334, 26);
@@ -92,8 +103,8 @@
             this.personListView.GridLines = true;
             this.personListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.personListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3,
-            listViewItem4});
+            listViewItem1,
+            listViewItem2});
             this.personListView.Location = new System.Drawing.Point(6, 26);
             this.personListView.Name = "personListView";
             this.personListView.Size = new System.Drawing.Size(314, 236);
@@ -103,7 +114,7 @@
             // 
             // columnName
             // 
-            this.columnName.Text = "Name";
+            this.columnName.Text = "Full Name";
             this.columnName.Width = 148;
             // 
             // columnDateOfBirth
@@ -150,17 +161,6 @@
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox2.TabIndex = 14;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            // 
-            // addLotsOfThings
-            // 
-            this.addLotsOfThings.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.addLotsOfThings.Location = new System.Drawing.Point(334, 55);
-            this.addLotsOfThings.Name = "addLotsOfThings";
-            this.addLotsOfThings.Size = new System.Drawing.Size(75, 23);
-            this.addLotsOfThings.TabIndex = 2;
-            this.addLotsOfThings.Text = "Add Many";
-            this.addLotsOfThings.UseVisualStyleBackColor = true;
-            this.addLotsOfThings.Click += new System.EventHandler(this.addLotsOfThings_Click);
             // 
             // DataEntryForm
             // 
