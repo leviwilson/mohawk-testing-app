@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using FizzWare.NBuilder;
+using UIA.Extensions;
 
 namespace WindowsForms
 {
@@ -9,6 +10,7 @@ namespace WindowsForms
         public DataGridViewForm()
         {
             InitializeComponent();
+            dataGridView1.AsTable();
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
