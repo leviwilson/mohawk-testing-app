@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Child 1");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Grandchild 1");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Child 2", new System.Windows.Forms.TreeNode[] {
@@ -74,6 +75,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.toggleMultiSelect = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.automatableMonthCalendar1 = new WindowsForms.AutomatableMonthCalendar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -98,6 +100,7 @@
             this.aboutButton.Size = new System.Drawing.Size(95, 23);
             this.aboutButton.TabIndex = 1;
             this.aboutButton.Text = "&About";
+            this.toolTip1.SetToolTip(this.aboutButton, "Click About to find out what it\'s all About");
             this.aboutButton.UseVisualStyleBackColor = true;
             this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
             // 
@@ -571,6 +574,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button toggleMultiSelect;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
